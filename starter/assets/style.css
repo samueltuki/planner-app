@@ -69,3 +69,24 @@ textarea {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
+
+.clearDiv {
+  display:  flex;
+  justify-content: center;
+  margin: 32px ;
+  border-radius: 92px;
+  height: 50px;
+
+}
+
+#clearAll {
+width: 100px;
+  color: #000000;
+  border-radius: 12px;
+  background-color: #ffffff;
+  border: 1px solid rgb(1, 1, 1);
+}
+
+#clearAll:hover {
+ background-color: #ff6961;
+}
