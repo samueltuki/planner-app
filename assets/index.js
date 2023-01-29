@@ -28,7 +28,7 @@ saveBtns.click(function (e) {
 
 timeBlockEls.each(function () {
   // used "this" to grab the specific div in the time-block
-  let timeColorSlot = parseInt($(this).attr("id")).replace("hour","");
+  let timeColorSlot = parseInt($(this).attr("id"));
   // used if statement to check the color coding logic and the 
   if (timeColorSlot > currentTimeEl) {
     $(this).addClass("future");
@@ -71,8 +71,8 @@ timeBlockEls.each(function () {
 
 
 
-clearItembtn.click(function(e) {
+// clearItembtn.click(function(e) {
 
 
     
-})
+// })
