@@ -26,7 +26,7 @@ saveBtns.click(function (e) {
 });
 
 // function colorCoding() {
-//   for (let i = startHour; i <= endHour; i++) {
+//   for(let i = startHour; i <= endHour; i++) {
 //     if (startHour < currentTimeEl) {
 //       textInput.addClass(".past");
 //     } else if (startHour === currentTimeEl) {
