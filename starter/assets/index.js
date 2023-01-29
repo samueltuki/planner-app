@@ -25,17 +25,8 @@ saveBtns.click(function (e) {
   localStorage.setItem(timeBlockId, closestTextArea.val());
 });
 
-// function colorCoding() {
-//   for(let i = startHour; i <= endHour; i++) {
-//     if (startHour < currentTimeEl) {
-//       textInput.addClass(".past");
-//     } else if (startHour === currentTimeEl) {
-//       textInput.addClass(".present");
-//     } else {
-//       textInput.addClass(".future");
-//     }
-//   }
-// }
+
+
 
 timeBlockEls.each(function(){
     // used "this" to grab the specific div in the time-block
