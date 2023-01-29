@@ -1,7 +1,6 @@
 // displays the current date/time using moment js
 let currentDayEl = moment().format("ddd D MMM YYYY , h: m ss");
 $("#currentDay").text(currentDayEl);
-// let currentTimeEl = moment().format("h m ss");
 let currentTimeEl = moment().hour();
 
 let startHour = 9;
@@ -28,7 +27,7 @@ saveBtns.click(function (e) {
 
 timeBlockEls.each(function () {
   // used "this" to grab the specific div in the time-block
-  let timeColorSlot = parseInt($(this).attr("id"));
+  let timeColorSlot = parseInt($(this).attr("id").replace("hour", ""));
   // used if statement to check the color coding logic and the 
   if (timeColorSlot > currentTimeEl) {
     $(this).addClass("future");
@@ -38,41 +37,3 @@ timeBlockEls.each(function () {
     $(this).addClass("present");
   }
 });
-
-
-
-// timeBlockEls.each(function () {
-//   // used "this" to grab the specific div in the time-block
-//   let timeColorSlot = parseInt(timeBlockEls.attr("id", "hour9"));
-//   // used if statement to check the color coding logic and the 
-//   if (timeColorSlot > currentTimeEl) {
-//     $(this).addClass("future");
-//   } else if (timeColorSlot < currentTimeEl) {
-//     $(this).addClass("past");
-//   } else {
-//     $(this).addClass("present");
-//   }
-// });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// clearItembtn.click(function(e) {
-
-
-    
-// })
