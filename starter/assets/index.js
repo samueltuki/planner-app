@@ -11,7 +11,7 @@ let containerEl = $(".container");
 let saveBtns = $(".saveBtn");
 let textInput = $("textarea");
 
-// add click event to save textArea value into local storage
+// added click event to save textArea value into local storage
 saveBtns.click(function (e) {
   // used "this" to grab reference to specific button that was clicked
   let clickedBtn = $(this);
@@ -25,19 +25,15 @@ saveBtns.click(function (e) {
   localStorage.setItem(timeBlockId, closestTextArea.val());
 });
 
-
-
-timeBlockEls.each(function(){
-    // used "this" to grab the specific div in the time-block
-    let timeColorSlot = parseInt($(this).attr("id"));
-    // checking the 
-    if (timeColorSlot > currentTimeEl) {
-        $(this).addClass("future");
-        
-     }else if (timeColorSlot < currentTimeEl) {
-        $(this).addClass("past")
-            
-     } else {
-        $(this).addClass("present")
-     }
-})
+timeBlockEls.each(function () {
+  // used "this" to grab the specific div in the time-block
+  let timeColorSlot = parseInt($(this).attr("id"));
+  // used if statement to check the color coding logic
+  if (timeColorSlot > currentTimeEl) {
+    $(this).addClass("future");
+  } else if (timeColorSlot < currentTimeEl) {
+    $(this).addClass("past");
+  } else {
+    $(this).addClass("present");
+  }
+});
