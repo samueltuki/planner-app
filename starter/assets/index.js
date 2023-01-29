@@ -27,7 +27,6 @@ saveBtns.click(function (e) {
 
 
 
-
 timeBlockEls.each(function(){
     // used "this" to grab the specific div in the time-block
     let timeColorSlot = parseInt($(this).attr("id"));
