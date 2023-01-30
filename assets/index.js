@@ -40,7 +40,7 @@ timeBlockEls.each(function () {
   }
 });
 
-// clear button function incase a user changes mind
+// clear button function that declare all content in the "description" class should be wiped empty (val("")) on click
 clearBtn.on('click', function(){
 
   $(".description").val('');
