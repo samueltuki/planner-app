@@ -10,6 +10,8 @@ let containerEl = $(".container");
 
 let saveBtns = $(".saveBtn");
 let textInput = $("textarea");
+let clearBtn = $("#clearAll");
+
 
 // added click event to save textArea value into local storage
 saveBtns.click(function (e) {
@@ -37,3 +39,11 @@ timeBlockEls.each(function () {
     $(this).addClass("present");
   }
 });
+
+// clear button function incase a user changes mind
+clearBtn.on('click', function(){
+
+  $(".description").val('');
+
+ 
+})
